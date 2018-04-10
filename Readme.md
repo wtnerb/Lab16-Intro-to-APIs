@@ -1,4 +1,4 @@
-D![cf](http://i.imgur.com/7v5ASc8.png) Lab 16: Intro to APIs
+![cf](http://i.imgur.com/7v5ASc8.png) Lab 16: Intro to APIs
 =====================================
 
 ## To Submit this Assignment
