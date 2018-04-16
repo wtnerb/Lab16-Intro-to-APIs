@@ -38,7 +38,13 @@ Copy that URL into your postman or equivalent, althrough change it to read ```//
 }
 ```
 
-To interact with a specific item via put, post, get, or delete, change the method of the url and append `/id` where `id` is the unique id number of the item you are interacting with.
+To interact with a specific item via put, post, get, or delete:
+- put: requires '/{id}' parameter, the body of the request needs "name" and "isComplete" in JSON.
+- post: NO id. The body of the request needs "name" and "isComplete" in JSON
+- get: Gets all without id, a specific item with an id parameter
+- delete: requires id parameter.
+
+Note: the ID parameter is something like ``` //localhost:12345/api/todo/3 ``` if you are trying to get, delete, or update "get a real job" from the starter data. Note how it has an id of 3 and the parameter at the end of the URL is also 3.  
 
 ## Architecture
 This is a .net core web API, hosted locally. It interacts with a local sql database. Then endpoints are in the controllers, the form of the data is in models, and since this API has no front end that really is all there is to it. Since this is not hosted it only exists locally.
